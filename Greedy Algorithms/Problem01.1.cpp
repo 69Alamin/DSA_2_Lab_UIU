@@ -80,7 +80,13 @@ int main() {
     cout<<"Total "<<count<<" thieves stole from the warehouse"<<endl;
 
 
-    cout<<"Still following items are left "<<endl;
+    
+    for(int i=0;i<n;i++){
+        if(items[i].weight!=0){  
+                cout<<"Still following items are left "<<endl;
+        }
+
+    }
     for(int i=0;i<n;i++){
         if(items[i].weight!=0){  
                 cout<<items[i].name<<" :"<<items[i].weight<<"  kg   "<<items[i].value<<" taka"<<endl;
